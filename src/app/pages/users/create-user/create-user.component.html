@@ -5,25 +5,25 @@
             <div class="image-box">
                 <img src="https://i.pinimg.com/564x/20/21/35/20213585795b1d232af28c9106038247.jpg" alt="">
             </div>
-            <form action="#">
+            <form (ngSubmit)="addUser()">
                 <div class="topic form-link">Crea su cuenta</div>
                 <!--cambiar centrar---------------------------------------->
 
                 <div class="input-box">
-                    <input type="text" placeholder="Nombre" class="input" required>
+                    <input type="text"  [(ngModel)]="nombre"  placeholder="Nombre" class="input" required>
                 </div>
 
                 <div class="input-box">
-                    <input type="email" placeholder="Email" class="input" required>
+                    <input type="email" [(ngModel)]="email" placeholder="Email" class="input" required>
                 </div>
 
                 <div class="input-box">
-                    <input type="password" placeholder="Create Password" class="password" required>
+                    <input type="password" [(ngModel)]="password" placeholder="Create Password" class="password" required>
                     <i class='bx bx-hide eye-icon'></i>
                 </div>
 
                 <div class="input-box">
-                    <input type="password" placeholder="Repeat Password" class="password" required>
+                    <input type="password" [(ngModel)]="confirmPassword" placeholder="Repeat Password" class="password" required>
                     <i class='bx bx-hide eye-icon'></i>
                 </div>
                 <div class="input-box">
@@ -31,7 +31,7 @@
                 </div>
 
                 <div class="form-link">
-                    <span>Already have an account? <a class="signup-link active" href="login.html">Login</a></span>
+                    <span>Already have an account? <a class="signup-link active" >Login</a></span>
                 </div>
 
                 <div class="line"></div>

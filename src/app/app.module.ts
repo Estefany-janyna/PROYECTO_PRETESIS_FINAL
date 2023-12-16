@@ -16,6 +16,9 @@ import { EditarProductosComponent } from './pages/productos/editar-productos/edi
 import { GoogleMapsModule } from '@angular/google-maps';
 import { AprenderComponent } from './pages/navbar/elements/aprender/aprender.component';
 
+import { FormsModule } from '@angular/forms'; // Asegúrate de importar FormsModule
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +37,8 @@ import { AprenderComponent } from './pages/navbar/elements/aprender/aprender.com
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
