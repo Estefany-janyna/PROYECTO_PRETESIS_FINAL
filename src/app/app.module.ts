@@ -14,6 +14,7 @@ import { NavbarComponent } from './pages/navbar/navbar.component';
 import { EditarProductosComponent } from './pages/productos/editar-productos/editar-productos.component';
 
 import { GoogleMapsModule } from '@angular/google-maps';
+import { AprenderComponent } from './pages/navbar/elements/aprender/aprender.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { GoogleMapsModule } from '@angular/google-maps';
     CrearProductosComponent,
     NavbarComponent,
     EditarProductosComponent,
+    AprenderComponent,
    
    
   ],

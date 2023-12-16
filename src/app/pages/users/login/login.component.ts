@@ -21,7 +21,7 @@ export class LoginComponent {
               private dataLogin: DataLoginService){
       this.loginForm = this.fb.group(
         {
-            username: ['', Validators.required],
+          nombre: ['', Validators.required],
             password: ['', Validators.required]
         }
       )
@@ -30,11 +30,11 @@ export class LoginComponent {
   loginUser(){
 
    const USER: Usuario = {
-      username: this.loginForm.get('username')?.value,
+    nombre: this.loginForm.get('nombre')?.value,
       password: this.loginForm.get('password')?.value
     }
 
-    this.dataLogin.nombreUsuario = this.loginForm.get('username')?.value;
+    this.dataLogin.nombreUsuario = this.loginForm.get('nombre')?.value;
 
     console.log(this.dataLogin.nombreUsuario);
 
